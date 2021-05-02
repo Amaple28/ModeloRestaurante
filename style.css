@@ -1,0 +1,380 @@
+/*RESET-LIMPANDO MINHA PÁGINA*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: arial, verdana, helvetica;
+    box-sizing: border-box;
+}
+
+
+/*MUDAR TIPO DE ROLAGEM (SCROLL DO NAVEGADOR - DESLIZAR)*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*HEADER*/
+
+header {
+    background-color: #a52a2a;
+    width: 100%;
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 120px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 15px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+
+/*QUEBRA DE PONTO (BREAKPOINT)*/
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+
+/*SECTION-FULLSCREN*/
+
+.img_total {
+    background-image: url(imagens/restaurante.jpeg);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.img_total h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    color: white;
+    margin-top: 80px;
+}
+
+.img_total h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: whitesmoke;
+}
+
+.botao {
+    background-color: black;
+    border-radius: 2px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 80px;
+    box-shadow: rgb(50, 50, 50) 2px 2px 2px 2px;
+}
+
+.botao:hover {
+    color: #a52a2a;
+}
+
+
+/*QUEBRA DE PONTO (BREAKPOINT)*/
+
+@media (max-width: 700px) {
+    .img_total h3 {
+        color: #ffffff;
+        font-size: 18px;
+    }
+    .img_total h1 {
+        color: #ffffff;
+        margin-top: 170px;
+    }
+    .botao {
+        margin-top: 20px;
+    }
+}
+
+
+/* CONHEÇA (textos e imagens) */
+
+.conheca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+}
+
+.conheca h1 {
+    font-size: 28px;
+    color: black;
+    text-align: center;
+}
+
+.conheca p {
+    max-width: 600px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #5f5b5b;
+}
+
+.conheca hr {
+    height: 2px;
+    width: 300px;
+    background-color: black;
+    border: none;
+    margin-bottom: 50px;
+}
+
+.conheca .fotos_conheca {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conheca .fotos_conheca li {
+    list-style: none;
+    height: 300px;
+    padding: 10px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+
+.conheca .fotos_conheca .ft_pequena {
+    flex-basis: 40%;
+}
+
+.conheca .fotos_conheca .ft_grande {
+    flex-basis: 60%;
+}
+
+@media (max-width: 700px) {
+    .conheca .fotos_conheca .ft_pequena {
+        flex-basis: 100%;
+    }
+    .conheca .fotos_conheca .ft_grande {
+        flex-basis: 100%;
+    }
+}
+
+
+/*CARDÁPIO*/
+
+.cardapio {
+    background-color: #a52a2a;
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardapio h1 {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+.cardapio p {
+    text-align: center;
+    margin: 30px 150px;
+    font-size: 20px;
+    color: #ffffff;
+    max-width: 500px;
+}
+
+.cardapio hr {
+    height: 2px;
+    width: 300px;
+    background-color: black;
+    border: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.div_cardapio {
+    background-color: #a52a2a;
+    margin-top: 42px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.div_cardapio .div_item {
+    padding: 30px;
+    width: 30%;
+    min-width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div_item .icon {
+    width: 100px;
+}
+
+.div_item h1 {
+    color: black;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.div_item p {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 10px;
+}
+
+@media (max-width: 700px) {
+    .cardapio h1 {
+        font-size: 30px;
+    }
+    .cardapio p {
+        text-align: center;
+        margin: 30px 30px;
+        font-size: 20px;
+    }
+    .div_cardapio .div_item {
+        padding: 20px;
+        width: 90%;
+    }
+    .div_item p {
+        margin-bottom: 70px;
+    }
+}
+
+
+/*RESERVAS*/
+
+.reservas {
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    text-align: center;
+    align-items: center;
+}
+
+.reservas h1 {
+    font-size: 28px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.reservas h3 {
+    font-size: 16px;
+    color: #5f5b5b;
+    margin-bottom: 20px;
+}
+
+.reservas form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 800px;
+}
+
+.reservas form input {
+    padding: 8px;
+    border: #ffffff 1px solid;
+    border-radius: 5px;
+    margin-right: 15px;
+    box-shadow: rgb(150, 150, 150) 2px 2px 2px 2px;
+    flex: 1;
+}
+
+.reservas button {
+    font-size: 15px;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 10px;
+    padding: 5px 10px;
+    box-shadow: rgb(50, 50, 50);
+}
+
+.reservas button a {
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.reservas button a:hover {
+    color: #a52a2a;
+}
+
+@media (max-width: 400px) {
+    .reservas form input {
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+}
+
+
+/*FOOTER / RODAPE*/
+
+footer {
+    background-color: #a52a2a;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer p {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+footer .direitos {
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+
+footer .social {
+    width: 300px;
+    align-items: center;
+}
+
+footer .logo_rodape {
+    height: 120px;
+    align-items: center;
+}
+
+@media (max-width:700px) {
+    footer {
+        flex-direction: column;
+    }
+}
